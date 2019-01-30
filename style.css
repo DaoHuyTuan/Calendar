@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.calendar {
+  width: 400px;
+  height: 500px;
+  margin-left: 200px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px #cccccc;
+}
+.calendar .titleMonth {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  border-bottom: 1px solid #dddddd;
+}
+.calendar .titleMonth .backBtn, .calendar .titleMonth .nextBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  top: 15px;
+  background-size: contain;
+  background-repeat: none;
+  cursor: pointer;
+}
+.calendar .titleMonth .backBtn {
+  left: 20px;
+  background-image: url("left.svg");
+}
+.calendar .titleMonth .nextBtn {
+  right: 20px;
+  background-image: url("right.svg");
+}
+.calendar .titleMonth .titleMonth__text {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.calendar .titleDay {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 42px 42px 42px 42px 42px 42px 42px;
+  grid-column-gap: 10px;
+  padding: 10px;
+  padding-top: 15px;
+  justify-content: center;
+}
+.calendar .titleDay__day {
+  width: 42px;
+  text-align: center;
+  font-weight: lighter;
+}
+.calendar .daysInMonth {
+  height: 300px;
+  width: 100%;
+  padding: 20px;
+  padding-top: 10px;
+}
+.calendar .daysInMonth .week {
+  display: grid;
+  height: 42px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.calendar .daysInMonth .week .days {
+  height: 42px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 1px solid #cccccc;
+}
+.calendar .daysInMonth .week .currentDay {
+  background-color: #77a0ff;
+  color: white;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
