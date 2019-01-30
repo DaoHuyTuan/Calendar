@@ -8,6 +8,10 @@ body {
   margin: 0px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .calendar {
   width: 400px;
   height: 500px;
@@ -39,14 +43,28 @@ body {
   right: 20px;
   background-image: url("right.svg");
 }
-.calendar .titleMonth .titleMonth__text {
+.calendar .titleMonth .monthText_box {
   width: 100%;
   display: block;
+  overflow: hidden;
+}
+.calendar .titleMonth .monthText_box .month_main {
+  width: 2400%;
+  transition: 0.5s;
+  animation-timing-function: linear;
+  position: relative;
+  left: -400px;
+}
+.calendar .titleMonth .monthText_box .month_main .titleMonth__text {
+  width: 400px;
+  height: 49px;
+  display: inline-block;
   text-align: center;
   font-size: 20px;
   line-height: 20px;
   font-weight: bold;
   padding-top: 15px;
+  margin: 0 auto;
 }
 .calendar .titleDay {
   width: 100%;
@@ -64,7 +82,7 @@ body {
   font-weight: lighter;
 }
 .calendar .daysInMonth {
-  height: 300px;
+  height: 400px;
   width: 100%;
   padding: 20px;
   padding-top: 10px;
@@ -83,6 +101,14 @@ body {
   cursor: pointer;
   margin-top: 20px;
   border: 1px solid #cccccc;
+}
+.calendar .daysInMonth .week .firstDay {
+  margin-top: 0px;
+}
+.calendar .daysInMonth .week .days:hover {
+  background-color: #77a0ff;
+  border: none;
+  color: #ffffff;
 }
 .calendar .daysInMonth .week .currentDay {
   background-color: #77a0ff;
