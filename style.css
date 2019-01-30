@@ -65,6 +65,7 @@ body {
   font-weight: bold;
   padding-top: 15px;
   margin: 0 auto;
+  margin-right: -4px;
 }
 .calendar .titleDay {
   width: 100%;
