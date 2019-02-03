@@ -52,7 +52,12 @@ body {
   width: 2400%;
   transition: 0.5s;
   animation-timing-function: linear;
+<<<<<<< HEAD
   transform: translateX(-400px);
+=======
+  position: relative;
+  left: -400px;
+>>>>>>> a33e837adfecb2fe464b232d359743853b5cd97d
 }
 .calendar .titleMonth .monthText_box .month_main .titleMonth__text {
   width: 400px;
@@ -64,6 +69,10 @@ body {
   font-weight: bold;
   padding-top: 15px;
   margin: 0 auto;
+<<<<<<< HEAD
+=======
+  margin-right: -4px;
+>>>>>>> a33e837adfecb2fe464b232d359743853b5cd97d
 }
 .calendar .titleDay {
   width: 100%;
