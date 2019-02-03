@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass":"sass style.scss style.css --watch"
+
   },
   "keywords": [],
-  "author": "",
+  "author": "DaoHuyTuan",
   "license": "ISC"
 }
